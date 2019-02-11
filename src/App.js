@@ -35,7 +35,7 @@ const Main = styled.main`
 
         @media (min-width: 1025px) {
             & {
-                background-color: red;
+                /* background-color: red; */
             }
         }
 

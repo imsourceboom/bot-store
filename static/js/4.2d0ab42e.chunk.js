@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{55:function(e,t,i){"use strict";i.r(t);var n=i(0),s=i.n(n);t.default=function(){return s.a.createElement("section",null,s.a.createElement("h1",null,"Bot"),s.a.createElement("div",null,"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel eligendi consectetur aspernatur veritatis iusto ab impedit possimus, odit, fugiat minus provident, nostrum nemo ad esse quam voluptate maxime? Minus, ipsam."))}}}]);
+//# sourceMappingURL=4.2d0ab42e.chunk.js.map

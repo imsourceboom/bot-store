@@ -25,9 +25,9 @@ export const today = [
         url: 'http://cdn.visla.kr/wp/wp-content/uploads/2015/10/151019_ws_16.jpg'
     },
     {
-        tag: '추천앱',
-        title: '모두의 알림',
-        summary: '모든 알림들을 한 곳에서 확인 및 관리',
+        tag: '이야기',
+        title: '크립토키티',
+        summary: '최초의 블록체인 게임 그 여정의 이야기',
         url: 'http://image.zdnet.co.kr/2017/12/08/sontech_GJVz3hIMPTdj.jpg'
     }
 ];

@@ -28,12 +28,13 @@ class App extends Component {
 
 const Main = styled.main`
     & > section {
-        max-width: 1025px;
+        max-width: 1024px;
         margin: 0 auto;
-        padding: 0 1rem 100px;
+        padding: 0 1rem 80px;
+        box-sizing: border-box;
         animation: trigger 0.5s;
 
-        @media (min-width: 1025px) {
+        @media (min-width: 1024px) {
             & {
                 /* background-color: red; */
             }

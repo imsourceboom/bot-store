@@ -56,15 +56,25 @@ const active = {
 };
 
 const Wrap = styled.nav`
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+
     & > ul {
-        position: fixed;
-        bottom: 0;
-        z-index: 1;
         display: flex;
         width: 100%;
         height: 60px;
+        margin: 0 auto;
         background-color: rgba(255, 255, 255, 1);
         box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.1);
+
+        @media (min-width: 1440px) {
+            & {
+                max-width: 1024px;
+                border-radius: 10px 10px 0 0;
+            }
+        }
 
         & li {
             flex: 1;
@@ -78,9 +88,22 @@ const Wrap = styled.nav`
                 align-items: center;
                 justify-content: center;
 
+                @media (min-width: 768px) {
+                    & {
+                        flex-direction: row;
+                    }
+                }
+
                 & span {
                     @media (max-width: 768px) {
-                        font-size: 13px;
+                        & {
+                            font-size: 13px;
+                        }
+                    }
+                    @media (min-width: 768px) {
+                        & {
+                            padding: 0 0.5rem;
+                        }
                     }
                 }
             }

@@ -23,10 +23,10 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Noto Sans KR', sans-serif;
         font-size: 16px;
         font-weight: 400;
-
+        line-height: 1.5;
         color: rgba(0, 0, 0, 0.84);
 
-        * { outline: none; }
+        * { outline: none; box-sizing: border-box; }
 
         a { text-decoration: none; }
 

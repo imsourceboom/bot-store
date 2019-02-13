@@ -16,7 +16,6 @@ const Box = styled.div`
 
     & > .media--wrap {
         width: 100%;
-        height: 75%;
 
         & > img {
             width: 100%;
@@ -99,7 +98,10 @@ class Card extends React.Component {
                 pose={this.state.expanded ? 'expanded' : 'inline'}
                 style={{ zIndex: this.state.expanded ? 1 : 0 }}
             >
-                <div className="media--wrap">
+                <div
+                    className="media--wrap"
+                    style={{ height: this.state.expanded ? 'auto' : '75%' }}
+                >
                     <img src={image} alt="" />
                 </div>
                 <div className="content--wrap">

@@ -9,12 +9,12 @@ const Dapp = ({ match }) => (
             iure omnis tenetur, possimus doloremque ducimus numquam maiores rerum quo error rem
             libero officiis quis debitis recusandae accusantium!
         </div>
-        <Link to={`${match.url}/detail`}>Detail</Link>
-        <Route path={`${match.url}/:id`} component={Detail} />
+        <Link to={`${match.url}/detail`}>Further</Link>
+        <Route path={`${match.url}/:id`} component={Further} />
     </section>
 );
 
-const Detail = ({ match }) => (
+const Further = ({ match }) => (
     <>
         <h1>{match.params.id}</h1>
     </>

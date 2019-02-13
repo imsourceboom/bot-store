@@ -9,13 +9,13 @@ const GlobalStyle = createGlobalStyle`
     html {
         height: 100%;
         scroll-behavior:smooth;
-        -ms-overflow-style:none;
-
-        &::-webkit-scrollbar {
-            display: none;
-        }
+        -ms-overflow-style:none;    
     }
 
+    ::-webkit-scrollbar {
+            display: none;
+    }
+    
     body {
         width: 100%;
         min-height: 100%;

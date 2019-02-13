@@ -28,7 +28,10 @@ class App extends Component {
 
 const Main = styled.main`
     & > section {
+        position: relative;
         max-width: 1024px;
+        height: 100vh;
+        overflow-y: scroll;
         margin: 0 auto;
         padding: 0 1rem 80px;
         box-sizing: border-box;

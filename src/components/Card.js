@@ -14,19 +14,6 @@ const Box = styled.div`
     overflow: hidden;
     cursor: pointer;
 
-    ${({ theme }) =>
-        theme === 'expanded'
-            ? `
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  `
-            : `
-    position: relative;
-  `};
-
     & > .media--wrap {
         width: 100%;
         height: 75%;
@@ -84,15 +71,17 @@ const Flipper = posed(Box)({
         position: 'fixed',
         top: 0,
         left: 0,
+        margin: 0,
         width: '100%',
         height: '100%',
-        margin: 0,
+        borderRadius: 0,
         flip: true
     },
     inline: {
         position: 'relative',
         width: '100%',
         height: '360px',
+        borderRadius: '10px',
         flip: true
     }
 });

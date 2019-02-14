@@ -1,8 +1,8 @@
 {
   "main.js": "/bot-store/static/js/main.219e31da.chunk.js",
   "main.js.map": "/bot-store/static/js/main.219e31da.chunk.js.map",
-  "static/js/1.1e96a10b.chunk.js": "/bot-store/static/js/1.1e96a10b.chunk.js",
-  "static/js/1.1e96a10b.chunk.js.map": "/bot-store/static/js/1.1e96a10b.chunk.js.map",
+  "static/js/1.3101485e.chunk.js": "/bot-store/static/js/1.3101485e.chunk.js",
+  "static/js/1.3101485e.chunk.js.map": "/bot-store/static/js/1.3101485e.chunk.js.map",
   "static/js/2.14360e5a.chunk.js": "/bot-store/static/js/2.14360e5a.chunk.js",
   "static/js/2.14360e5a.chunk.js.map": "/bot-store/static/js/2.14360e5a.chunk.js.map",
   "static/js/3.78103507.chunk.js": "/bot-store/static/js/3.78103507.chunk.js",
@@ -15,9 +15,9 @@
   "static/js/6.5509f5b1.chunk.js.map": "/bot-store/static/js/6.5509f5b1.chunk.js.map",
   "static/js/7.7dc86f78.chunk.js": "/bot-store/static/js/7.7dc86f78.chunk.js",
   "static/js/7.7dc86f78.chunk.js.map": "/bot-store/static/js/7.7dc86f78.chunk.js.map",
-  "runtime~main.js": "/bot-store/static/js/runtime~main.2ae50aab.js",
-  "runtime~main.js.map": "/bot-store/static/js/runtime~main.2ae50aab.js.map",
+  "runtime~main.js": "/bot-store/static/js/runtime~main.5f5e9f20.js",
+  "runtime~main.js.map": "/bot-store/static/js/runtime~main.5f5e9f20.js.map",
   "index.html": "/bot-store/index.html",
-  "precache-manifest.d87e75efc46bdee82f64fe0feb825631.js": "/bot-store/precache-manifest.d87e75efc46bdee82f64fe0feb825631.js",
+  "precache-manifest.0ff0e8e4ebde42c5e3337f1efa6be963.js": "/bot-store/precache-manifest.0ff0e8e4ebde42c5e3337f1efa6be963.js",
   "service-worker.js": "/bot-store/service-worker.js"
 }

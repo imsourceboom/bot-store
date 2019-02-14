@@ -108,7 +108,8 @@ class Card extends React.Component {
                 pose={this.state.expanded ? 'expanded' : 'inline'}
                 style={{
                     zIndex: this.state.expanded ? 1 : 0,
-                    overflow: this.state.expanded ? 'scroll' : 'hidden'
+                    overflow: this.state.expanded ? 'scroll' : 'hidden',
+                    overscrollBehavior: this.state.expanded ? 'contain' : 'initial'
                 }}
             >
                 <div

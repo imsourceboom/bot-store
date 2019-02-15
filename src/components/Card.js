@@ -109,7 +109,7 @@ class Card extends React.Component {
                 style={{
                     zIndex: this.state.expanded ? 1 : 0,
                     overflow: this.state.expanded ? 'scroll' : 'hidden',
-                    overscrollBehavior: this.state.expanded ? 'contain' : 'initial'
+                    WebkitOverflowScrolling: this.state.expanded ? 'touch' : 'initial'
                 }}
             >
                 <div
@@ -130,7 +130,7 @@ class Card extends React.Component {
                     <p className="summary">{summary}</p>
                 </div>
                 {this.state.expanded && (
-                    <InSide>
+                    <InSide id="overlay">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusamus
                             repudiandae ullam beatae, maiores rerum, ipsum voluptates itaque fuga

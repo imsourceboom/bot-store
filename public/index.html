@@ -14,6 +14,11 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   <script>
+    /*
+      iOS modal scroll시 부럽게 안되는 현상 해결 코드
+      해당 modal element에 -webkit-overflow-scrolling: touch; 도 추가
+      ex) 아래의 경우 overlay가 modal element
+    */
     var _overlay = document.getElementById('overlay');
     if (_overlay != null) {
       (function () {

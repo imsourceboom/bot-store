@@ -140,6 +140,7 @@ class Card extends React.Component {
                         <img
                             src="http://image.chosun.com/sitedata/image/201705/17/2017051700631_0.jpg"
                             alt=""
+                            style={{ padding: '3rem 0' }}
                         />
                         <p>
                             생명을 갑 원질이 스며들어 힘차게 착목한는 귀는 못할 부패뿐이다. 품에

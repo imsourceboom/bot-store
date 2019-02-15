@@ -2,106 +2,6 @@ import React from 'react';
 import posed from 'react-pose';
 import styled from 'styled-components';
 
-const Box = styled.article`
-    position: relative;
-    width: 100%;
-    height: 360px;
-    margin: 0 0 2rem;
-    border-radius: 10px;
-    box-shadow: 1px 0 18px 0 rgba(0, 0, 0, 0.07), 0px 20px 32px 0 rgba(0, 0, 0, 0.03);
-    box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 1);
-    cursor: pointer;
-
-    & > .wrap {
-        width: 100%;
-        max-width: 1024px;
-        height: 100%;
-        margin: 0 auto;
-
-        & > .media--wrap {
-            width: 100%;
-
-            & > img {
-                width: 100%;
-                height: 100%;
-                max-width: 100%;
-                max-height: 350px;
-                object-fit: cover;
-
-                @media (min-width: 768px) {
-                    & {
-                        width: initial;
-                    }
-                }
-            }
-        }
-
-        & > .content--wrap {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            padding: 0 1rem;
-            background-color: rgba(255, 255, 255, 1);
-
-            & .tag,
-            & .summary {
-                color: rgba(0, 0, 0, 0.45);
-            }
-
-            & .tag {
-                font-size: 13.5px;
-                line-height: 1.1;
-            }
-
-            & .title {
-                line-height: 1.3;
-                padding-bottom: 0.15rem;
-            }
-
-            & .summary {
-                font-size: 14px;
-            }
-        }
-    }
-`;
-
-const InSide = styled.div`
-    padding: 0 1rem 5rem;
-
-    & img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        max-height: 500px;
-        margin: 0 auto;
-    }
-`;
-
-const Flipper = posed(Box)({
-    flip: {
-        transition: { type: 'spring', stiffness: 500, damping: 500 }
-    },
-    expanded: {
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        margin: 0,
-        width: '100%',
-        height: '100%',
-        borderRadius: 0,
-        flip: true
-    },
-    inline: {
-        position: 'relative',
-        width: '100%',
-        height: '360px',
-        borderRadius: '10px',
-        flip: true
-    }
-});
-
 class Card extends React.Component {
     state = { expanded: false };
 
@@ -114,6 +14,7 @@ class Card extends React.Component {
                 onClick={this.toggle}
                 pose={this.state.expanded ? 'expanded' : 'inline'}
                 style={{
+                    width: this.state.expanded && '100%',
                     zIndex: this.state.expanded ? 1 : 0,
                     overflow: this.state.expanded ? 'scroll' : 'hidden',
                     WebkitOverflowScrolling: this.state.expanded ? 'touch' : 'initial'
@@ -196,5 +97,103 @@ class Card extends React.Component {
 //         </Box>
 //     );
 // };
+
+const Box = styled.article`
+    position: relative;
+    width: 100%;
+    height: 360px;
+    margin: 0 0 2rem;
+    border-radius: 10px;
+    box-shadow: 1px 0 18px 0 rgba(0, 0, 0, 0.07), 0px 20px 32px 0 rgba(0, 0, 0, 0.03);
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+        & {
+            width: 48.5%;
+        }
+    }
+
+    & > .wrap {
+        width: 100%;
+        max-width: 768px;
+        height: 100%;
+        margin: 0 auto;
+
+        & > .media--wrap {
+            width: 100%;
+
+            & > img {
+                width: 100%;
+                height: 100%;
+                max-width: 100%;
+                max-height: 350px;
+                object-fit: cover;
+            }
+        }
+
+        & > .content--wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            padding: 0 1rem;
+            background-color: rgba(255, 255, 255, 1);
+
+            & .tag,
+            & .summary {
+                color: rgba(0, 0, 0, 0.45);
+            }
+
+            & .tag {
+                font-size: 13.5px;
+                line-height: 1.1;
+            }
+
+            & .title {
+                line-height: 1.3;
+                padding-bottom: 0.15rem;
+            }
+
+            & .summary {
+                font-size: 14px;
+            }
+        }
+    }
+`;
+
+const InSide = styled.div`
+    padding: 0 1rem 5rem;
+
+    & img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 500px;
+        margin: 0 auto;
+    }
+`;
+
+const Flipper = posed(Box)({
+    flip: {
+        transition: { type: 'spring', stiffness: 500, damping: 500 }
+    },
+    expanded: {
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        margin: 0,
+        height: '100%',
+        borderRadius: 0,
+        flip: true
+    },
+    inline: {
+        position: 'relative',
+        height: '360px',
+        borderRadius: '10px',
+        flip: true
+    }
+});
 
 export default Card;

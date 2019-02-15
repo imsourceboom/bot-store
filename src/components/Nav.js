@@ -69,7 +69,7 @@ const Wrap = styled.nav`
         background-color: rgba(255, 255, 255, 1);
         box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.1);
 
-        @media (min-width: 1440px) {
+        @media (min-width: 1366px) {
             & {
                 max-width: 1024px;
                 border-radius: 10px 10px 0 0;

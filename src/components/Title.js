@@ -8,7 +8,8 @@ const Title = ({ children }) => (
 );
 
 const Wrap = styled.article`
-    padding: 2.5rem 0 1rem;
+    width: 100%;
+    padding: 2.5rem 0 1.5rem;
 
     & > h1 {
         font-size: 28px;
@@ -25,7 +26,7 @@ const Wrap = styled.article`
                 font-size: 32px;
             }
         }
-        @media (min-width: 1440px) {
+        @media (min-width: 1366px) {
             & {
                 font-size: 34px;
             }

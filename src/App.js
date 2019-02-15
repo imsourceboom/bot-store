@@ -34,12 +34,6 @@ const Main = styled.main`
         box-sizing: border-box;
         animation: trigger 0.5s;
 
-        @media (min-width: 1024px) {
-            & {
-                /* background-color: red; */
-            }
-        }
-
         @keyframes trigger {
             from {
                 opacity: 0;

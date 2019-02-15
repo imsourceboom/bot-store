@@ -1,9 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Title from 'components/Title';
 import Card from 'components/Card';
 
 import { today } from 'data';
+
+const FlexWrap = styled.section`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+`;
 
 /*
 class Story extends React.Component {
@@ -33,7 +40,7 @@ class Story extends React.Component {
 
 const Story = () => {
     return (
-        <section>
+        <FlexWrap>
             <Title>Story</Title>
             {today.map((content, i) => (
                 <Card
@@ -44,7 +51,7 @@ const Story = () => {
                     key={i}
                 />
             ))}
-        </section>
+        </FlexWrap>
     );
 };
 

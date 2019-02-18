@@ -4,7 +4,7 @@ import GlobalStyle from 'style/GlobalStyle';
 import styled from 'styled-components';
 
 import Nav from 'components/Nav';
-import { Story, Game, Dapp, Bot, Search } from 'pages';
+import { Story, Game, Bot, Search } from 'pages';
 
 class App extends Component {
     render() {
@@ -16,7 +16,7 @@ class App extends Component {
                     <Switch>
                         <Route exact path="/" component={Story} />
                         <Route path="/game" component={Game} />
-                        <Route path="/dapp" component={Dapp} />
+                        {/* <Route path="/dapp" component={Dapp} /> */}
                         <Route path="/bot" component={Bot} />
                         <Route path="/search" component={Search} />
                     </Switch>

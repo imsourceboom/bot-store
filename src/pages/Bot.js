@@ -1,8 +1,9 @@
 import React from 'react';
+import Title from 'components/Title';
 
 const Bot = () => (
     <section>
-        <h1>Bot</h1>
+        <Title>Bot</Title>
         <div>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel eligendi consectetur
             aspernatur veritatis iusto ab impedit possimus, odit, fugiat minus provident, nostrum

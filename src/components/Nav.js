@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { QuoteLeft, Joystick, Bot } from 'styled-icons/boxicons-solid';
-import { Apps } from 'styled-icons/material';
+// import { Apps } from 'styled-icons/material';
 import { Search } from 'styled-icons/boxicons-regular';
 
 const Nav = () => {
@@ -22,12 +22,12 @@ const Nav = () => {
                             <span>게임</span>
                         </NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink to="/dapp" activeStyle={active} style={link}>
                             <Apps size="22" />
                             <span>댑</span>
                         </NavLink>
-                    </li>
+                    </li> */}
                     <li>
                         <NavLink to="/bot" activeStyle={active} style={link}>
                             <Bot size="22" />

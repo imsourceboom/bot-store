@@ -6,6 +6,7 @@
     "cross-env": "^5.2.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
+    "react-id-swiper": "^1.6.8",
     "react-pose": "^4.0.7",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.3",

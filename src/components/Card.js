@@ -17,7 +17,8 @@ class Card extends React.Component {
                     width: this.state.expanded && '100%',
                     zIndex: this.state.expanded ? 1 : 0,
                     overflow: this.state.expanded ? 'scroll' : 'hidden',
-                    WebkitOverflowScrolling: this.state.expanded ? 'touch' : 'initial'
+                    WebkitOverflowScrolling: this.state.expanded ? 'touch' : 'initial',
+                    marginTop: this.state.expanded ? '0' : '1rem'
                 }}
             >
                 <div id="overlay" className="wrap">
@@ -168,7 +169,6 @@ const Flipper = posed(Box)({
         position: 'fixed',
         top: 0,
         left: 0,
-        margin: 0,
         height: '100%',
         borderRadius: 0,
         flip: true

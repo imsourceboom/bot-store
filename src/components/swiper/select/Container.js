@@ -10,7 +10,6 @@ import Box from './Box';
 import { game } from 'data';
 
 const Container = () => {
-    console.log(game.select);
     return (
         <SwiperWrap>
             <Swiper {...params}>

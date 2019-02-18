@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Title from 'components/Title';
 import Card from 'components/Card';
 
-import { today } from 'data';
+import { story } from 'data';
 
 const FlexWrap = styled.section`
     display: flex;
@@ -22,7 +22,7 @@ class Story extends React.Component {
             <section>
                 <Title>Story</Title>
                 <div onClick={this.showDetail}>hi</div>
-                {today.map((content, i) => (
+                {story.map((content, i) => (
                     <Card
                         detail={this.showDetail}
                         image={content.url}
@@ -42,7 +42,7 @@ const Story = () => {
     return (
         <FlexWrap>
             <Title>Story</Title>
-            {today.map((content, i) => (
+            {story.map((content, i) => (
                 <Card
                     image={content.url}
                     tag={content.tag}

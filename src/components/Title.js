@@ -9,12 +9,12 @@ const Title = ({ children }) => (
 
 const Wrap = styled.article`
     width: 100%;
-    padding: 2.5rem 0 1.5rem;
+    padding: 2.5rem 0 0;
 
     & > h1 {
         font-size: 28px;
         padding-bottom: 0.5rem;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
 
         @media (min-width: 768px) {
             & {

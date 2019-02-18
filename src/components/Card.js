@@ -83,26 +83,11 @@ class Card extends React.Component {
     }
 }
 
-// const Card = ({ image, tag, title, summary, detail }) => {
-//     return (
-//         <Box onClick={detail}>
-//             <div className="media--wrap">
-//                 <img src={image} alt="" />
-//             </div>
-//             <div className="content--wrap">
-//                 <span className="tag">{tag}</span>
-//                 <h1 className="title">{title}</h1>
-//                 <p className="summary">{summary}</p>
-//             </div>
-//         </Box>
-//     );
-// };
-
 const Box = styled.article`
     position: relative;
     width: 100%;
     height: 360px;
-    margin: 0 0 2rem;
+    margin: 1rem 0;
     border-radius: 10px;
     box-shadow: 1px 0 18px 0 rgba(0, 0, 0, 0.07), 0px 20px 32px 0 rgba(0, 0, 0, 0.03);
     box-sizing: border-box;

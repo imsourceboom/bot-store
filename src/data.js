@@ -1,4 +1,4 @@
-export const today = [
+export const story = [
     {
         tag: '추천앱',
         title: '3D Emoji',
@@ -62,3 +62,35 @@ export const today = [
         url: 'http://image.zdnet.co.kr/2017/12/08/sontech_GJVz3hIMPTdj.jpg'
     }
 ];
+
+export const game = {
+    select: [
+        {
+            title: '최신 업데이트',
+            name: '스노우보딩',
+            summary: 'Grear Adventure',
+            img: 'https://cdn.vox-cdn.com/uploads/chorus_asset/file/3422986/c01_Chasm.0.gif'
+        },
+        {
+            title: '최신 업데이트',
+            name: '스노우보딩',
+            summary: 'Grear Adventure',
+            img: 'https://cdn.vox-cdn.com/uploads/chorus_asset/file/3422986/c01_Chasm.0.gif'
+        },
+        {
+            title: '최신 업데이트',
+            name: '스노우보딩',
+            summary: 'Grear Adventure',
+            img: 'https://cdn.vox-cdn.com/uploads/chorus_asset/file/3422986/c01_Chasm.0.gif'
+        },
+        {
+            title: '최신 업데이트',
+            name: '스노우보딩',
+            summary: 'Grear Adventure',
+            img: 'https://cdn.vox-cdn.com/uploads/chorus_asset/file/3422986/c01_Chasm.0.gif'
+        }
+    ],
+    popular: [],
+    new: [],
+    suggest: []
+};

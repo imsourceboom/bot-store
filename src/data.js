@@ -66,24 +66,28 @@ export const story = [
 export const game = {
     select: [
         {
+            id: 1,
             title: '최신 업데이트',
             name: '스노우보딩',
             summary: 'Great Adventure',
             img: 'https://cdn.vox-cdn.com/uploads/chorus_asset/file/3422986/c01_Chasm.0.gif'
         },
         {
+            id: 2,
             title: '최신 업데이트',
             name: '검은사막',
             summary: '신규 캐릭터 업데이트',
             img: 'https://www.pearlabyss.com/common/images/games/bdm-img.jpg'
         },
         {
+            id: 3,
             title: '최신 업데이트',
             name: '리니지m',
             summary: '20주년 풀HD 리마스터',
             img: 'http://www.bloter.net/wp-content/uploads/2018/11/lineage-remastered_1-800x419.jpg'
         },
         {
+            id: 4,
             title: '새로운 게임',
             name: 'Path of Exile',
             summary: '디아블로2의 무한한 확장판',

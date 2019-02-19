@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
 
         * { outline: none; box-sizing: border-box; }
 
-        a { text-decoration: none; }
+        a { text-decoration: none; color: inherit; }
 
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Oswald', sans-serif;

@@ -9,13 +9,15 @@ import Box from './Box';
 
 import { game } from 'data';
 
-const Container = () => {
+const Container = ({ road }) => {
     return (
         <SwiperWrap>
             <Swiper {...params}>
-                {game.select.map((per, i) => (
+                {game.select.map((per, id) => (
                     <Box
-                        key={i}
+                        road={road}
+                        id={id}
+                        key={id}
                         title={per.title}
                         name={per.name}
                         summary={per.summary}

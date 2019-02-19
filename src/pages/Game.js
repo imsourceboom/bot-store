@@ -1,14 +1,20 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
+
+import { Selected } from 'pages';
 
 import Title from 'components/Title';
-import { Select, Popular } from 'components/swiper';
+import { Advert, Popular } from 'components/swiper';
 
-const Game = () => {
+const Game = ({ match }) => {
     return (
         <section>
             <Title>Game</Title>
-            <Select />
+            <Advert road={match.url} />
             <Popular />
+            <Advert />
+            <Popular />
+            <Route path={`${match.url}/:id`} component={Selected} />
         </section>
     );
 };

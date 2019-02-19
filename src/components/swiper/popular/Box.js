@@ -14,8 +14,8 @@ const ItemWrap = styled.div`
     &.swiper-slide {
         max-width: 90%;
         height: auto;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
+        /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+        margin-bottom: 2rem;
 
         &:first-child {
             margin-left: -2%;

@@ -11,3 +11,5 @@ export const Game = withSplitting(() => import('./Game'));
 export const Dapp = withSplitting(() => import('./Dapp'));
 export const Bot = withSplitting(() => import('./Bot'));
 export const Search = withSplitting(() => import('./Search'));
+
+export const Selected = withSplitting(() => import('./Selected'));

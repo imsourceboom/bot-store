@@ -15,7 +15,7 @@ class Card extends React.Component {
                 pose={this.state.expanded ? 'expanded' : 'inline'}
                 style={{
                     width: this.state.expanded && '100%',
-                    zIndex: this.state.expanded ? 1 : 0,
+                    zIndex: this.state.expanded ? 2 : 0,
                     overflow: this.state.expanded ? 'scroll' : 'hidden',
                     WebkitOverflowScrolling: this.state.expanded ? 'touch' : 'initial',
                     marginTop: this.state.expanded ? '0' : '1rem'

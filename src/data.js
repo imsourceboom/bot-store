@@ -68,29 +68,54 @@ export const game = {
         {
             title: '최신 업데이트',
             name: '스노우보딩',
-            summary: 'Grear Adventure',
+            summary: 'Great Adventure',
             img: 'https://cdn.vox-cdn.com/uploads/chorus_asset/file/3422986/c01_Chasm.0.gif'
         },
         {
             title: '최신 업데이트',
-            name: '스노우보딩',
-            summary: 'Grear Adventure',
-            img: 'https://cdn.vox-cdn.com/uploads/chorus_asset/file/3422986/c01_Chasm.0.gif'
+            name: '검은사막',
+            summary: '신규 캐릭터 업데이트',
+            img: 'https://www.pearlabyss.com/common/images/games/bdm-img.jpg'
         },
         {
             title: '최신 업데이트',
-            name: '스노우보딩',
-            summary: 'Grear Adventure',
-            img: 'https://cdn.vox-cdn.com/uploads/chorus_asset/file/3422986/c01_Chasm.0.gif'
+            name: '리니지m',
+            summary: '20주년 풀HD 리마스터',
+            img: 'http://www.bloter.net/wp-content/uploads/2018/11/lineage-remastered_1-800x419.jpg'
         },
         {
-            title: '최신 업데이트',
-            name: '스노우보딩',
-            summary: 'Grear Adventure',
-            img: 'https://cdn.vox-cdn.com/uploads/chorus_asset/file/3422986/c01_Chasm.0.gif'
+            title: '새로운 게임',
+            name: 'Path of Exile',
+            summary: '디아블로2의 무한한 확장판',
+            img: 'https://pbs.twimg.com/media/Dr56cqsV4AAlKgx.jpg'
         }
     ],
-    popular: [],
+    popular: [
+        {
+            title: '최신 업데이트',
+            name: '스노우보딩',
+            summary: 'Great Adventure',
+            img: 'https://cdn.vox-cdn.com/uploads/chorus_asset/file/3422986/c01_Chasm.0.gif'
+        },
+        {
+            title: '최신 업데이트',
+            name: '검은사막',
+            summary: '신규 캐릭터 업데이트',
+            img: 'https://www.pearlabyss.com/common/images/games/bdm-img.jpg'
+        },
+        {
+            title: '최신 업데이트',
+            name: '리니지m',
+            summary: '20주년 풀HD 리마스터',
+            img: 'http://www.bloter.net/wp-content/uploads/2018/11/lineage-remastered_1-800x419.jpg'
+        },
+        {
+            title: '새로운 게임',
+            name: 'Path of Exile',
+            summary: '디아블로2의 무한한 확장판',
+            img: 'https://pbs.twimg.com/media/Dr56cqsV4AAlKgx.jpg'
+        }
+    ],
     new: [],
     suggest: []
 };

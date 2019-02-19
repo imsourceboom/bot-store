@@ -6,12 +6,6 @@ import Card from 'components/Card';
 
 import { story } from 'data';
 
-const FlexWrap = styled.section`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-`;
-
 /*
 class Story extends React.Component {
     showDetail = e => {
@@ -54,5 +48,11 @@ const Story = () => {
         </FlexWrap>
     );
 };
+
+const FlexWrap = styled.section`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+`;
 
 export default Story;

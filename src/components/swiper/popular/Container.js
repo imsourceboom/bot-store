@@ -13,8 +13,14 @@ const Container = () => {
     return (
         <SwiperWrap>
             <Swiper {...params}>
-                {game.select.map((per, i) => (
-                    <Box key={i} title={per.title} image={per.img} />
+                {game.popular.map((per, i) => (
+                    <Box
+                        key={i}
+                        title={per.title}
+                        name={per.name}
+                        summary={per.summary}
+                        image={per.img}
+                    />
                 ))}
             </Swiper>
         </SwiperWrap>
@@ -22,8 +28,8 @@ const Container = () => {
 };
 
 const SwiperWrap = styled.article`
-    position: relative;
-    z-index: 0;
+    /* position: relative;
+    z-index: 0; */
     /* padding: 1rem 0; */
     /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
 

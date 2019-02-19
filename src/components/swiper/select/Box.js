@@ -5,7 +5,7 @@ const Box = ({ title, name, summary, image }) => (
     <ItemWrap className="swiper-slide">
         <h5>{title}</h5>
         <h3>{name}</h3>
-        <div>{summary}</div>
+        <p>{summary}</p>
         <img src={image} alt="" />
     </ItemWrap>
 );
@@ -13,10 +13,9 @@ const Box = ({ title, name, summary, image }) => (
 const ItemWrap = styled.div`
     &.swiper-slide {
         max-width: 90%;
-        /* height: 300px; */
+        height: auto;
         border-top: 1px solid rgba(0, 0, 0, 0.1);
         margin-bottom: 20px;
-        background-color: rgba(179, 208, 233, 0.5);
 
         &:first-child {
             margin-left: -2%;
@@ -38,8 +37,26 @@ const ItemWrap = styled.div`
             }
         }
 
+        & h5 {
+            font-family: 'Noto sans KR';
+            font-size: 0.7rem;
+            font-weight: 300;
+            margin-top: 0.5rem;
+            color: darkslateblue;
+        }
+
+        & p {
+            margin-bottom: 0.5rem;
+            color: rgba(0, 0, 0, 0.4);
+        }
+
         & img {
-            width: 100%;
+            display: block;
+            /* width: 100%; */
+            height: 100%;
+            max-width: 100%;
+            max-height: 220px;
+            object-fit: cover;
             border-radius: 10px;
         }
     }

@@ -58,7 +58,7 @@ const active = {
 const Wrap = styled.nav`
     position: fixed;
     bottom: 0;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
 
     & > ul {

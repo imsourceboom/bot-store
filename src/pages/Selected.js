@@ -1,161 +1,107 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
-const Selected = ({ match }) => (
-    <Container>
-        <h1>Selected Page {match.params.id}</h1>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
-            officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
-            aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
-        </p>
-    </Container>
-);
+const Selected = props => {
+    console.log(props);
+    const back = () => props.history.goBack();
+    return (
+        <Container>
+            <h1 onClick={back}>뒤로가기 {props.match.params.id}</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
+                officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
+                aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem
+                ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis officiis,
+                repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore aperiam
+                est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
+            </p>
+        </Container>
+    );
+};
 
 const SlideInRight = keyframes`
     from {

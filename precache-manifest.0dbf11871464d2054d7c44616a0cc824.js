@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "e10263030896cf11b0f9",
-    "url": "/bot-store/static/js/6.e1026303.chunk.js"
+    "revision": "74f40349abb3ef11993a",
+    "url": "/bot-store/static/js/6.74f40349.chunk.js"
   },
   {
     "revision": "92e0d92bec969a5444e0",
     "url": "/bot-store/static/js/main.92e0d92b.chunk.js"
   },
   {
-    "revision": "a86a4cbd31299b3340f0",
-    "url": "/bot-store/static/js/runtime~main.a86a4cbd.js"
+    "revision": "a24b78ebe631c7b03f4f",
+    "url": "/bot-store/static/js/runtime~main.a24b78eb.js"
   },
   {
     "revision": "6cd498b9e0690fbda3af",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/bot-store/static/css/9.422eb4cd.chunk.css"
   },
   {
-    "revision": "1624ecec693e6816ca2e1c5be92761c2",
+    "revision": "4a57ec18c8d6b2b6942738b3e66d82c9",
     "url": "/bot-store/index.html"
   }
 ];

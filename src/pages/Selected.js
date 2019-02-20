@@ -2,11 +2,10 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const Selected = props => {
-    console.log(props);
     const back = () => props.history.goBack();
     return (
-        <Container>
-            <Wrap id="overlay">
+        <Container id="overlay">
+            <Wrap>
                 <h1 onClick={back}>뒤로가기 {props.match.params.id}</h1>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
@@ -128,6 +127,7 @@ const Container = styled.div`
     width: 100%;
     height: 100%;
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
     background-color: rgba(255, 255, 255, 1);
     animation: ${SlideInRight} 0.3s;
 `;

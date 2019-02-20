@@ -6,7 +6,7 @@ const Selected = props => {
     const back = () => props.history.goBack();
     return (
         <Container>
-            <Wrap>
+            <Wrap id="overlay">
                 <h1 onClick={back}>뒤로가기 {props.match.params.id}</h1>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis

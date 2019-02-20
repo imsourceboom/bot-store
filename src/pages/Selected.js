@@ -1,12 +1,16 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import posed from 'react-pose';
 
 const Selected = props => {
     const back = () => props.history.goBack();
+    const [trigger, setTrigger] = useState(false);
     return (
-        <Container id="overlay">
+        <ContainerPose id="overlay">
             <Wrap>
                 <h1 onClick={back}>뒤로가기 {props.match.params.id}</h1>
+                <span onClick={() => setTrigger(!trigger)}>버튼이라고 치자</span>
+                {trigger && <h2>햐이</h2>}
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda perspiciatis
                     officiis, repudiandae autem reprehenderit excepturi placeat, necessitatibus,
@@ -106,18 +110,9 @@ const Selected = props => {
                     aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
                 </p>
             </Wrap>
-        </Container>
+        </ContainerPose>
     );
 };
-
-const SlideInRight = keyframes`
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: none;
-    }
-`;
 
 const Container = styled.div`
     position: fixed;
@@ -129,8 +124,12 @@ const Container = styled.div`
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
     background-color: rgba(255, 255, 255, 1);
-    animation: ${SlideInRight} 0.3s;
 `;
+
+const ContainerPose = posed(Container)({
+    enter: { x: 0 },
+    exit: { x: '100%' }
+});
 
 const Wrap = styled.div`
     width: 100%;

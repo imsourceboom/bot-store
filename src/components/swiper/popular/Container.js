@@ -9,19 +9,17 @@ import Box from './Box';
 
 import { game } from 'data';
 
-const Container = () => {
+const Container = ({ road }) => {
     return (
         <SwiperWrap>
             <Border />
+            <HeadLine>
+                <h2>인기 게임</h2>
+                <span>모두보기</span>
+            </HeadLine>
             <Swiper {...params}>
-                {game.popular.map((per, i) => (
-                    <Box
-                        key={i}
-                        title={per.title}
-                        name={per.name}
-                        summary={per.summary}
-                        image={per.img}
-                    />
+                {game.popular.map((per, id) => (
+                    <Box road={road} id={id} key={id} icon={per.icon} />
                 ))}
             </Swiper>
         </SwiperWrap>
@@ -29,9 +27,6 @@ const Container = () => {
 };
 
 const SwiperWrap = styled.article`
-    /* padding: 1rem 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1); */
-
     @media (max-width: 767px) {
         margin: 0 -1rem;
     }
@@ -44,6 +39,23 @@ const Border = styled.div`
 
     @media (min-width: 768px) {
         width: 100%;
+    }
+`;
+
+const HeadLine = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 5%;
+
+    @media (min-width: 768px) {
+        padding: 0.3rem 0;
+    }
+
+    span {
+        font-size: 0.8rem;
+        font-weight: 100;
+        color: rgba(76, 103, 161, 1);
     }
 `;
 

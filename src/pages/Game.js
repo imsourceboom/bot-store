@@ -17,11 +17,12 @@ const Game = ({ match, location }) => {
         <section>
             <Title>Game</Title>
             <Advert road={match.url} />
-            <Popular />
+            <Popular road={match.url} />
             <Advert />
             <Popular />
             <PoseGroup>
                 <RouteContainer key={location.key}>
+                    }
                     <Switch location={location}>
                         <Route path={`${match.url}/:id`} component={Selected} key=":id" />
                     </Switch>

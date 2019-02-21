@@ -15,11 +15,11 @@ class App extends Component {
                 <Nav />
                 <Main>
                     <Switch>
-                        <Route path="/" component={Story} />
                         <Route path="/game" component={Game} />
                         {/* <Route path="dapp" component={Dapp} /> */}
                         <Route path="/bot" component={Bot} />
                         <Route path="/search" component={Search} />
+                        <Route path="/" component={Story} />
                     </Switch>
                 </Main>
             </>

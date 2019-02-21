@@ -2,6 +2,12 @@
   "name": "bot-store",
   "version": "0.1.0",
   "private": true,
+  "description": "Telegram bot store which copied AppStore design",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imsourceboom/bot-store"
+  },
+  "author": "imsourceboom <ecmascript.developer@gmail.com>",
   "dependencies": {
     "cross-env": "^5.2.0",
     "react": "^16.8.2",

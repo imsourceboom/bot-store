@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
+
 import GlobalStyle from 'style/GlobalStyle';
 import styled from 'styled-components';
 
@@ -14,7 +15,7 @@ class App extends Component {
                 <Nav />
                 <Main>
                     <Switch>
-                        <Route exact path="/" component={Story} />
+                        <Route path="/" component={Story} />
                         <Route path="/game" component={Game} />
                         {/* <Route path="dapp" component={Dapp} /> */}
                         <Route path="/bot" component={Bot} />

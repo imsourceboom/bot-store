@@ -23,7 +23,7 @@ const Game = ({ match, location }) => {
                 <RouteContainer key={location.key}>
                     <Switch location={location}>
                         <Route
-                            path={process.env.PUBLIC_URL + `${match.url}/:selected`}
+                            path={`${match.url}/:selected`}
                             component={Selected}
                             key=":selected"
                         />

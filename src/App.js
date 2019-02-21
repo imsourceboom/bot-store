@@ -14,11 +14,11 @@ class App extends Component {
                 <Nav />
                 <Main>
                     <Switch>
-                        <Route exact path="/" component={Story} />
-                        <Route path="/game" component={Game} />
-                        {/* <Route path="/dapp" component={Dapp} /> */}
-                        <Route path="/bot" component={Bot} />
-                        <Route path="/search" component={Search} />
+                        <Route exact path={process.env.PUBLIC_URL + '/'} component={Story} />
+                        <Route path={process.env.PUBLIC_URL + '/game'} component={Game} />
+                        {/* <Route path={process.env.PUBLIC_URL+"/dapp"} component={Dapp} /> */}
+                        <Route path={process.env.PUBLIC_URL + '/bot'} component={Bot} />
+                        <Route path={process.env.PUBLIC_URL + '/search'} component={Search} />
                     </Switch>
                 </Main>
             </>

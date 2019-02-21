@@ -18,9 +18,9 @@ const Container = ({ road }) => {
                 <span>모두보기</span>
             </HeadLine>
             <Swiper {...params}>
-                {game.popular.map((per, id) => (
-                    <Box road={road} id={id} key={id} icon={per.icon} />
-                ))}
+                {game.popular.intro.map((per, i) => {
+                    return <Box road={road} key={i} per={per} />;
+                })}
             </Swiper>
         </SwiperWrap>
     );

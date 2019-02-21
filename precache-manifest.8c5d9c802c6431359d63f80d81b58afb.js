@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/bot-store/static/css/0.9d2e8647.chunk.css"
   },
   {
-    "revision": "0c7fefd70cad71cd1efc",
-    "url": "/bot-store/static/js/main.0c7fefd7.chunk.js"
+    "revision": "91e6efe2113a7c9ad80d",
+    "url": "/bot-store/static/js/main.91e6efe2.chunk.js"
   },
   {
     "revision": "739523b515a669dd0b18",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/bot-store/static/js/runtime~main.638ed7e3.js"
   },
   {
-    "revision": "f926b2d29235d0d73fa00fe9088cfc55",
+    "revision": "704c77810dbc43a515f8e17044eb8133",
     "url": "/bot-store/index.html"
   }
 ];

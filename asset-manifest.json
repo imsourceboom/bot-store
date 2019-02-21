@@ -2,8 +2,8 @@
   "static/css/0.9d2e8647.chunk.css": "/bot-store/static/css/0.9d2e8647.chunk.css",
   "static/js/0.0e9e3487.chunk.js": "/bot-store/static/js/0.0e9e3487.chunk.js",
   "static/js/0.0e9e3487.chunk.js.map": "/bot-store/static/js/0.0e9e3487.chunk.js.map",
-  "main.js": "/bot-store/static/js/main.0c7fefd7.chunk.js",
-  "main.js.map": "/bot-store/static/js/main.0c7fefd7.chunk.js.map",
+  "main.js": "/bot-store/static/js/main.91e6efe2.chunk.js",
+  "main.js.map": "/bot-store/static/js/main.91e6efe2.chunk.js.map",
   "static/js/2.739523b5.chunk.js": "/bot-store/static/js/2.739523b5.chunk.js",
   "static/js/2.739523b5.chunk.js.map": "/bot-store/static/js/2.739523b5.chunk.js.map",
   "static/js/3.811c0ead.chunk.js": "/bot-store/static/js/3.811c0ead.chunk.js",
@@ -20,6 +20,6 @@
   "runtime~main.js.map": "/bot-store/static/js/runtime~main.638ed7e3.js.map",
   "static/css/0.9d2e8647.chunk.css.map": "/bot-store/static/css/0.9d2e8647.chunk.css.map",
   "index.html": "/bot-store/index.html",
-  "precache-manifest.954d94cbc56e92cd0bb9c1e47a483ef8.js": "/bot-store/precache-manifest.954d94cbc56e92cd0bb9c1e47a483ef8.js",
+  "precache-manifest.8c5d9c802c6431359d63f80d81b58afb.js": "/bot-store/precache-manifest.8c5d9c802c6431359d63f80d81b58afb.js",
   "service-worker.js": "/bot-store/service-worker.js"
 }

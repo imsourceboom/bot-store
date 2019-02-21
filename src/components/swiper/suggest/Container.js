@@ -14,11 +14,11 @@ const Container = ({ road }) => {
         <SwiperWrap>
             <Border />
             <HeadLine>
-                <h2>인기 게임</h2>
+                <h2>새롭게 추천하는 게임</h2>
                 <span>모두보기</span>
             </HeadLine>
             <Swiper {...params}>
-                {game.popular.intro.map((per, i) => {
+                {game.suggest.intro.map((per, i) => {
                     return <Box road={road} key={i} per={per} />;
                 })}
             </Swiper>

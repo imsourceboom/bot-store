@@ -5,7 +5,7 @@ import posed, { PoseGroup } from 'react-pose';
 import { Selected } from 'pages';
 
 import Title from 'components/Title';
-import { Advert, Popular } from 'components/swiper';
+import { Advert, Popular, Suggest } from 'components/swiper';
 
 const RouteContainer = posed.div({
     enter: { opacity: 1, beforeChildren: true },
@@ -18,11 +18,9 @@ const Game = ({ match, location }) => {
             <Title>Game</Title>
             <Advert road={match.url} />
             <Popular road={match.url} />
-            <Advert />
-            <Popular />
+            <Suggest road={match.url} />
             <PoseGroup>
                 <RouteContainer key={location.key}>
-                    }
                     <Switch location={location}>
                         <Route path={`${match.url}/:id`} component={Selected} key=":id" />
                     </Switch>

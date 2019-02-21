@@ -14,7 +14,10 @@ const Container = ({ road }) => {
         <SwiperWrap>
             <Border />
             <HeadLine>
-                <h2>인기 게임</h2>
+                <h2>
+                    인기
+                    {road === '/game' ? ' 게임' : ' 봇'}
+                </h2>
                 <span>모두보기</span>
             </HeadLine>
             <Swiper {...params}>

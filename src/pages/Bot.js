@@ -1,14 +1,37 @@
 import React from 'react';
-import Title from 'components/Title';
+import { Route, Switch } from 'react-router-dom';
+import posed, { PoseGroup } from 'react-pose';
 
-const Bot = () => (
-    <section>
-        <Title>Bot</Title>
-        <div>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel eligendi consectetur
-            aspernatur veritatis iusto ab impedit possimus, odit, fugiat minus provident, nostrum
-            nemo ad esse quam voluptate maxime? Minus, ipsam.
-        </div>
-    </section>
-);
+import { Selected } from 'pages';
+
+import Title from 'components/Title';
+import { Advert, Popular, Suggest } from 'components/swiper';
+
+const RouteContainer = posed.div({
+    enter: { opacity: 1, beforeChildren: true },
+    exit: { opacity: 1 }
+});
+
+const Bot = ({ match, location }) => {
+    return (
+        <section>
+            <Title>Bot</Title>
+            <Advert road={match.url} />
+            <Popular road={match.url} />
+            <Suggest road={match.url} />
+            <PoseGroup>
+                <RouteContainer key={location.key}>
+                    <Switch location={location}>
+                        <Route
+                            path={`${match.url}/:selected`}
+                            component={Selected}
+                            key=":selected"
+                        />
+                    </Switch>
+                </RouteContainer>
+            </PoseGroup>
+        </section>
+    );
+};
+
 export default Bot;

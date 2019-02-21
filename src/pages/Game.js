@@ -22,7 +22,7 @@ const Game = ({ match, location }) => {
             <PoseGroup>
                 <RouteContainer key={location.key}>
                     <Switch location={location}>
-                        <Route path={`${match.url}/:id`} component={Selected} key=":id" />
+                        <Route path={`${match.url}/:game`} component={Selected} key=":id" />
                     </Switch>
                 </RouteContainer>
             </PoseGroup>

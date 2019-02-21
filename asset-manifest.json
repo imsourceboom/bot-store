@@ -1,10 +1,10 @@
 {
   "main.js": "/bot-store/static/js/main.3572802b.chunk.js",
   "main.js.map": "/bot-store/static/js/main.3572802b.chunk.js.map",
-  "static/js/1.7e7318f4.chunk.js": "/bot-store/static/js/1.7e7318f4.chunk.js",
-  "static/js/1.7e7318f4.chunk.js.map": "/bot-store/static/js/1.7e7318f4.chunk.js.map",
-  "static/js/2.7dfdf889.chunk.js": "/bot-store/static/js/2.7dfdf889.chunk.js",
-  "static/js/2.7dfdf889.chunk.js.map": "/bot-store/static/js/2.7dfdf889.chunk.js.map",
+  "static/js/1.0fba83e2.chunk.js": "/bot-store/static/js/1.0fba83e2.chunk.js",
+  "static/js/1.0fba83e2.chunk.js.map": "/bot-store/static/js/1.0fba83e2.chunk.js.map",
+  "static/js/2.bfee47de.chunk.js": "/bot-store/static/js/2.bfee47de.chunk.js",
+  "static/js/2.bfee47de.chunk.js.map": "/bot-store/static/js/2.bfee47de.chunk.js.map",
   "static/js/3.712f27ec.chunk.js": "/bot-store/static/js/3.712f27ec.chunk.js",
   "static/js/3.712f27ec.chunk.js.map": "/bot-store/static/js/3.712f27ec.chunk.js.map",
   "static/js/4.4109c912.chunk.js": "/bot-store/static/js/4.4109c912.chunk.js",
@@ -16,10 +16,10 @@
   "static/css/7.bf58c733.chunk.css": "/bot-store/static/css/7.bf58c733.chunk.css",
   "static/js/7.ea7ee7b9.chunk.js": "/bot-store/static/js/7.ea7ee7b9.chunk.js",
   "static/js/7.ea7ee7b9.chunk.js.map": "/bot-store/static/js/7.ea7ee7b9.chunk.js.map",
-  "runtime~main.js": "/bot-store/static/js/runtime~main.dbab7727.js",
-  "runtime~main.js.map": "/bot-store/static/js/runtime~main.dbab7727.js.map",
+  "runtime~main.js": "/bot-store/static/js/runtime~main.fcd560d5.js",
+  "runtime~main.js.map": "/bot-store/static/js/runtime~main.fcd560d5.js.map",
   "static/css/7.bf58c733.chunk.css.map": "/bot-store/static/css/7.bf58c733.chunk.css.map",
   "index.html": "/bot-store/index.html",
-  "precache-manifest.01bf778e51ab89fa31336f2bf98c3ee4.js": "/bot-store/precache-manifest.01bf778e51ab89fa31336f2bf98c3ee4.js",
+  "precache-manifest.93429850ade2faab33ad5f6dc3885751.js": "/bot-store/precache-manifest.93429850ade2faab33ad5f6dc3885751.js",
   "service-worker.js": "/bot-store/service-worker.js"
 }

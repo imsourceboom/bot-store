@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 import Box from './Box';
 
-import { game } from 'data';
+import { gameSuggest } from 'data';
 
 const Container = ({ road }) => {
     return (
@@ -21,7 +21,7 @@ const Container = ({ road }) => {
                 <span>모두보기</span>
             </HeadLine>
             <Swiper {...params}>
-                {game.suggest.intro.map((per, i) => {
+                {gameSuggest.map((per, i) => {
                     return <Box road={road} key={i} per={per} />;
                 })}
             </Swiper>

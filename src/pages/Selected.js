@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { KeyboardArrowLeft } from 'styled-icons/material';
 import posed from 'react-pose';
 
 const Selected = props => {
@@ -7,8 +8,12 @@ const Selected = props => {
     const [trigger, setTrigger] = useState(false);
     return (
         <ContainerPose id="overlay">
-            <Wrap>
-                <h1 onClick={back}>뒤로가기 {props.match.params.id}</h1>
+            <Header>
+                <BackArrow size="32" />
+                <span onClick={back}>뒤로가기 {props.match.params.selected}</span>
+            </Header>
+            {/* <Wrap> */}
+            <Content>
                 <span onClick={() => setTrigger(!trigger)}>버튼이라고 치자</span>
                 {trigger && <h2>햐이</h2>}
                 <p>
@@ -109,7 +114,8 @@ const Selected = props => {
                     repudiandae autem reprehenderit excepturi placeat, necessitatibus, tempore
                     aperiam est ipsa soluta. Totam ut minima commodi aspernatur id, cum dolore.
                 </p>
-            </Wrap>
+            </Content>
+            {/* </Wrap> */}
         </ContainerPose>
     );
 };
@@ -131,11 +137,40 @@ const ContainerPose = posed(Container)({
     exit: { x: '100%' }
 });
 
-const Wrap = styled.div`
+const Layout = css`
     width: 100%;
-    height: 100%;
     max-width: 1024px;
     margin: 0 auto;
+`;
+
+const BackArrow = styled(KeyboardArrowLeft)``;
+const Header = styled.header`
+    ${Layout};
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 0;
+    background-color: rgba(255, 255, 255, 1);
+
+    @media (min-width: 768px) {
+        padding: 1rem 0;
+    }
+
+    ${BackArrow} {
+        color: rgba(205, 197, 197, 1);
+    }
+
+    span {
+        line-height: initial;
+        margin-top: -5px;
+    }
+`;
+
+const Content = styled.div`
+    ${Layout}
+    padding:0 1rem 60px;
 `;
 
 export default Selected;

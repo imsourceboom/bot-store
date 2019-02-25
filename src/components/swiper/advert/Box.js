@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const Box = ({ road, id, title, name, summary, image }) => (
+const Box = ({ road, pathname, comment, title, summary, image }) => (
     <ItemWrap className="swiper-slide">
-        <Link to={`${road}/${id}`}>
-            <h5>{title}</h5>
-            <h3>{name}</h3>
+        <Link to={`${road}/${pathname}`}>
+            <h5>{comment}</h5>
+            <h3>{title}</h3>
             <p>{summary}</p>
             <img src={image} alt="" />
         </Link>

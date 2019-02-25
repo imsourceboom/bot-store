@@ -7,19 +7,19 @@ import styled from 'styled-components';
 
 import Box from './Box';
 
-import { game } from 'data';
+import { gameAdvert } from 'data';
 
 const Container = ({ road }) => {
     return (
         <SwiperWrap>
             <Swiper {...params}>
-                {game.select.map((per, id) => (
+                {gameAdvert.map((per, i) => (
                     <Box
                         road={road}
-                        id={id}
-                        key={id}
+                        key={i}
+                        pathname={per.pathname}
+                        comment={per.comment}
                         title={per.title}
-                        name={per.name}
                         summary={per.summary}
                         image={per.img}
                     />

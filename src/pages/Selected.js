@@ -13,8 +13,11 @@ const Selected = props => {
     return (
         <ContainerPose id="overlay">
             <Header>
-                <BackArrow size="38" />
-                <h3 onClick={back}>뒤로가기 {props.match.params.selected}</h3>
+                <h3 onClick={back}>
+                    <BackArrow size="38" />
+                    뒤로가기
+                    {/* {props.match.params.selected} */}
+                </h3>
             </Header>
             <Content>
                 <Top>
@@ -22,10 +25,28 @@ const Selected = props => {
                     <div>
                         <p>{selectedData[0].title}</p>
                         <span>{selectedData[0].summary}</span>
+                        <button type="button">열기</button>
                     </div>
                 </Top>
-                <span onClick={() => setTrigger(!trigger)}>버튼이라고 치자</span>
-                {trigger && <h2>햐이</h2>}
+                <Description>
+                    <p>
+                        Lorem ipsum dolor sit. <br />
+                        commodi assumenda hic, dolore at. <br />
+                        perferendis a accusamus est nihil?
+                    </p>
+
+                    <span className="more" onClick={() => setTrigger(!trigger)}>
+                        {trigger ? '줄이기' : '더보기'}
+                    </span>
+                    {trigger && (
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non esse
+                            aperiam rem ipsam voluptas adipisci consequuntur corrupti aspernatur
+                            repellat optio, eligendi illo quae! Magni reiciendis ea neque. Pariatur,
+                            nihil iste!
+                        </p>
+                    )}
+                </Description>
             </Content>
         </ContainerPose>
     );
@@ -69,17 +90,22 @@ const Header = styled.header`
         padding: 1rem 0;
     }
 
-    ${BackArrow} {
-        color: rgba(205, 197, 197, 1);
-    }
-
     h3 {
+        ${BackArrow}
         line-height: initial;
         margin-top: -5px;
+        cursor: pointer;
+        color: rgba(71, 144, 181, 0.8);
+        transition: 0.5s;
+
+        &:hover {
+            color: rgba(71, 144, 181, 1);
+        }
     }
 `;
 
 const Top = styled.div``;
+const Description = styled.div``;
 const Content = styled.div`
     ${Layout}
     padding:0 1rem 60px;
@@ -101,7 +127,9 @@ const Content = styled.div`
         }
 
         & > div {
+            position: relative;
             padding-left: 1rem;
+            flex: 1;
 
             @media (min-width: 768px) {
                 padding-left: 2rem;
@@ -117,6 +145,7 @@ const Content = styled.div`
             }
 
             span {
+                display: block;
                 color: rgba(203, 196, 196, 1);
                 font-size: 0.8rem;
 
@@ -124,6 +153,35 @@ const Content = styled.div`
                     font-size: 1rem;
                 }
             }
+
+            button {
+                position: absolute;
+                bottom: 0;
+                width: 65px;
+                height: 25px;
+                line-height: 25px;
+                background-color: rgba(245, 245, 245, 1);
+                color: rgba(71, 144, 181, 1);
+                font-size: 0.8rem;
+                border-radius: 20px;
+                border: none;
+            }
+        }
+    }
+
+    ${Description} {
+        position: relative;
+        padding: 1rem 0;
+        margin: 1rem 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        .more {
+            position: absolute;
+            bottom: 1rem;
+            right: 0;
+            color: rgb(92, 107, 192);
+            font-size: 14px;
         }
     }
 `;

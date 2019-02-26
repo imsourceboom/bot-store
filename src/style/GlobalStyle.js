@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
-        color: rgba(0, 0, 0, 0.84);
+        color: rgba(0, 0, 0, 0.85);
 
         * { outline: none; box-sizing: border-box; }
 

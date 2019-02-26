@@ -34,7 +34,6 @@ const Selected = props => {
                         commodi assumenda hic, dolore at. <br />
                         perferendis a accusamus est nihil?
                     </p>
-
                     <span className="more" onClick={() => setTrigger(!trigger)}>
                         {trigger ? '줄이기' : '더보기'}
                     </span>

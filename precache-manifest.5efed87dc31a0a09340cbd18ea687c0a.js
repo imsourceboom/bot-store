@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f6c6f6c8cb7784254ad00056f6fbd74e",
-    "url": "/bot-store/static/media/fa-regular-400.f6c6f6c8.ttf"
+    "revision": "414ff5daad323a1c47c5177d4bd29674",
+    "url": "/bot-store/static/media/fa-regular-400.414ff5da.eot"
   },
   {
-    "revision": "61239a31b4360971be5f",
-    "url": "/bot-store/static/js/main.61239a31.chunk.js"
+    "revision": "85d16d03f0ff2016a9ad",
+    "url": "/bot-store/static/js/main.85d16d03.chunk.js"
   },
   {
     "revision": "82905d8d1c06969df11c8c378e9bdd4c",
@@ -16,20 +16,20 @@ self.__precacheManifest = [
     "url": "/bot-store/static/media/fa-brands-400.80533988.svg"
   },
   {
-    "revision": "b70cea0339374107969eb53e5b1f603f",
-    "url": "/bot-store/static/media/fa-solid-900.b70cea03.ttf"
-  },
-  {
     "revision": "b5596f4d339f99e3d69bc41be78db962",
     "url": "/bot-store/static/media/fa-solid-900.b5596f4d.eot"
+  },
+  {
+    "revision": "b70cea0339374107969eb53e5b1f603f",
+    "url": "/bot-store/static/media/fa-solid-900.b70cea03.ttf"
   },
   {
     "revision": "e7e957c87c454bccaa3bf9fdaa6874f8",
     "url": "/bot-store/static/media/fa-regular-400.e7e957c8.svg"
   },
   {
-    "revision": "c39278f7abfc798a241551194f55e29f",
-    "url": "/bot-store/static/media/fa-brands-400.c39278f7.ttf"
+    "revision": "d9d17590c975aad1be0ddab673f9c769",
+    "url": "/bot-store/static/media/fa-brands-400.d9d17590.eot"
   },
   {
     "revision": "073d91450fbc2071a9aa",
@@ -44,12 +44,12 @@ self.__precacheManifest = [
     "url": "/bot-store/static/media/fa-regular-400.5dd3976c.woff"
   },
   {
-    "revision": "414ff5daad323a1c47c5177d4bd29674",
-    "url": "/bot-store/static/media/fa-regular-400.414ff5da.eot"
+    "revision": "f6c6f6c8cb7784254ad00056f6fbd74e",
+    "url": "/bot-store/static/media/fa-regular-400.f6c6f6c8.ttf"
   },
   {
-    "revision": "d9d17590c975aad1be0ddab673f9c769",
-    "url": "/bot-store/static/media/fa-brands-400.d9d17590.eot"
+    "revision": "c39278f7abfc798a241551194f55e29f",
+    "url": "/bot-store/static/media/fa-brands-400.c39278f7.ttf"
   },
   {
     "revision": "4b115e1153a9ea339d6a0bb284cc8ed3",
@@ -96,7 +96,7 @@ self.__precacheManifest = [
     "url": "/bot-store/static/css/6.8ddcba2f.chunk.css"
   },
   {
-    "revision": "624bb1ff536ed5c9454b278b9d337377",
+    "revision": "41322750c2e6c2eccd87e238881d98e3",
     "url": "/bot-store/index.html"
   }
 ];

@@ -60,6 +60,17 @@ export default props => {
                             aperiam rem ipsam voluptas adipisci consequuntur corrupti aspernatur
                             repellat optio, eligendi illo quae! Magni reiciendis ea neque. Pariatur,
                             nihil iste!
+                            <br />
+                            <br />
+                            <br />
+                            국회는 국민의 보통·평등·직접·비밀선거에 의하여 선출된 국회의원으로
+                            구성한다. 연소자의 근로는 특별한 보호를 받는다. 국가는 주택개발정책등을
+                            통하여 모든 국민이 쾌적한 주거생활을 할 수 있도록 노력하여야 한다.
+                            국가는 농수산물의 수급균형과 유통구조의 개선에 노력하여 가격안정을
+                            도모함으로써 농·어민의 이익을 보호한다. 군인·군무원·경찰공무원 기타
+                            법률이 정하는 자가 전투·훈련등 직무집행과 관련하여 받은 손해에 대하여는
+                            법률이 정하는 보상외에 국가 또는 공공단체에 공무원의 직무상 불법행위로
+                            인한 배상은 청구할 수 없다.
                         </p>
                     )}
                 </Description>

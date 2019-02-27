@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import { KeyboardArrowLeft } from 'styled-icons/material';
+import { Eye } from 'styled-icons/icomoon/Eye';
 import posed from 'react-pose';
+import Rating from 'react-rating';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import { Intro } from 'components/swiper';
 
 import { data } from 'data';
 
-const Selected = props => {
+export default props => {
     const back = () => props.history.goBack();
     const [trigger, setTrigger] = useState(false);
     const selectedData = data.filter(v => v.pathname === props.match.params.selected);
@@ -28,17 +32,30 @@ const Selected = props => {
                         <button type="button">열기</button>
                     </div>
                 </Top>
-                <Description>
+                <Summary>
+                    <Rating
+                        className="rating"
+                        emptySymbol="far fa-star fa-2x"
+                        fullSymbol="fas fa-star fa-2x"
+                        fractions={2}
+                    />
+                    <Category>아케이드</Category>
+                    <View>
+                        <Eye />
+                        <span className="count">245,485회</span>
+                    </View>
+                </Summary>
+                <Description className={trigger && 'view'}>
                     <p>
                         Lorem ipsum dolor sit. <br />
                         commodi assumenda hic, dolore at. <br />
-                        perferendis a accusamus est nihil?
+                        perferendis a accusamus est nihil accusamus
                     </p>
                     <span className="more" onClick={() => setTrigger(!trigger)}>
                         {trigger ? '줄이기' : '더보기'}
                     </span>
                     {trigger && (
-                        <p>
+                        <p className="toggle-box">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non esse
                             aperiam rem ipsam voluptas adipisci consequuntur corrupti aspernatur
                             repellat optio, eligendi illo quae! Magni reiciendis ea neque. Pariatur,
@@ -46,6 +63,9 @@ const Selected = props => {
                         </p>
                     )}
                 </Description>
+                <Introduce>
+                    <Intro />
+                </Introduce>
             </Content>
         </ContainerPose>
     );
@@ -104,10 +124,17 @@ const Header = styled.header`
 `;
 
 const Top = styled.div``;
+
+const Summary = styled.div``;
+const Category = styled.div``;
+const View = styled.span``;
+
 const Description = styled.div``;
+
+const Introduce = styled.div``;
 const Content = styled.div`
     ${Layout}
-    padding:0 1rem 60px;
+    padding:0 1rem 80px;
 
     ${Top} {
         display: flex;
@@ -164,16 +191,65 @@ const Content = styled.div`
                 font-size: 0.8rem;
                 border-radius: 20px;
                 border: none;
+                cursor: pointer;
+
+                @media (min-width: 768px) {
+                    width: 85px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    ${Summary} {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        color: rgb(207, 216, 220);
+
+        & > .rating {
+            & .fa-star {
+                @media (max-width: 767px) {
+                    font-size: 1rem !important;
+                }
+            }
+        }
+
+        ${Category} {
+            @media (max-width: 767px) {
+                font-size: 14px;
+            }
+        }
+
+        ${View} {
+            display: flex;
+            align-items: center;
+
+            & > svg {
+                width: 18px;
+            }
+
+            & > .count {
+                padding: 0 0.3rem;
+                @media (max-width: 787px) {
+                    font-size: 14px;
+                }
             }
         }
     }
 
     ${Description} {
         position: relative;
-        padding: 1rem 0;
-        margin: 1rem 0;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 1rem;
+        margin-top: 1rem;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        &.view {
+            padding-bottom: 3rem;
+        }
 
         .more {
             position: absolute;
@@ -181,8 +257,26 @@ const Content = styled.div`
             right: 0;
             color: rgb(92, 107, 192);
             font-size: 14px;
+            padding-left: 1rem;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .toggle-box {
+            animation: fade-toggle 1s;
+            @keyframes fade-toggle {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
         }
     }
-`;
 
-export default Selected;
+    ${Introduce} {
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+`;

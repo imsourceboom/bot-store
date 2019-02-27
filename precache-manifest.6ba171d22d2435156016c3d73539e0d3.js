@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/bot-store/static/media/fa-regular-400.f6c6f6c8.ttf"
   },
   {
-    "revision": "812649c45096b02759ae",
-    "url": "/bot-store/static/js/main.812649c4.chunk.js"
+    "revision": "6ae11ff1c5a99695c864",
+    "url": "/bot-store/static/js/main.6ae11ff1.chunk.js"
   },
   {
     "revision": "82905d8d1c06969df11c8c378e9bdd4c",
@@ -16,12 +16,12 @@ self.__precacheManifest = [
     "url": "/bot-store/static/media/fa-brands-400.80533988.svg"
   },
   {
-    "revision": "b5596f4d339f99e3d69bc41be78db962",
-    "url": "/bot-store/static/media/fa-solid-900.b5596f4d.eot"
-  },
-  {
     "revision": "b70cea0339374107969eb53e5b1f603f",
     "url": "/bot-store/static/media/fa-solid-900.b70cea03.ttf"
+  },
+  {
+    "revision": "b5596f4d339f99e3d69bc41be78db962",
+    "url": "/bot-store/static/media/fa-solid-900.b5596f4d.eot"
   },
   {
     "revision": "e7e957c87c454bccaa3bf9fdaa6874f8",
@@ -96,7 +96,7 @@ self.__precacheManifest = [
     "url": "/bot-store/static/css/6.8ddcba2f.chunk.css"
   },
   {
-    "revision": "19e798f73644f9e76d09a36cd5c1dfc4",
+    "revision": "fa06542922e9b133df2cfaa145048efd",
     "url": "/bot-store/index.html"
   }
 ];

@@ -99,6 +99,7 @@ const Header = styled.header`
     ${Layout};
     position: sticky;
     top: 0;
+    z-index: 1;
     display: flex;
     align-items: center;
     width: 100%;

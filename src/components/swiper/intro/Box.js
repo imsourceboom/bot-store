@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Box = ({ road, pathname, comment, title, summary, image }) => (
@@ -71,7 +71,7 @@ const ItemWrap = styled.div`
             display: block;
             /* width: 100%;
             height: 100%; */
-            max-width: 100%;
+            max-width: 200px;
             /* max-height: 220px; */
             object-fit: contain;
             border-radius: 10px;

@@ -5,7 +5,7 @@ import { Eye } from 'styled-icons/icomoon/Eye';
 import posed from 'react-pose';
 import Rating from 'react-rating';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { Intro } from 'components/swiper';
+import { Intro, Comment } from 'components/swiper';
 
 import { data } from 'data';
 
@@ -63,9 +63,14 @@ export default props => {
                         </p>
                     )}
                 </Description>
-                <Introduce>
+                <PreView>
+                    <h3>미리보기</h3>
                     <Intro />
-                </Introduce>
+                </PreView>
+                <Review>
+                    <h3>평가 및 리뷰</h3>
+                    <Comment />
+                </Review>
             </Content>
         </ContainerPose>
     );
@@ -132,7 +137,9 @@ const View = styled.span``;
 
 const Description = styled.div``;
 
-const Introduce = styled.div``;
+const PreView = styled.div``;
+const Review = styled.div``;
+
 const Content = styled.div`
     ${Layout}
     padding:0 1rem 80px;
@@ -275,9 +282,22 @@ const Content = styled.div`
         }
     }
 
-    ${Introduce} {
+    ${PreView} {
         padding-bottom: 1rem;
         margin-top: 1rem;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        h3 {
+            padding-bottom: 1rem;
+        }
+    }
+
+    ${Review} {
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        h3 {
+            padding-bottom: 1rem;
+        }
     }
 `;

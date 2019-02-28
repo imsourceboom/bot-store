@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import posed, { PoseGroup } from 'react-pose';
 
-import { Selected } from 'pages';
+import { Selected, Allview } from 'pages';
 
 import Title from 'components/Title';
 import { Advert, Popular, Suggest } from 'components/swiper';
@@ -23,9 +23,14 @@ const Game = ({ match, location }) => {
                 <RouteContainer key={location.key}>
                     <Switch location={location}>
                         <Route
-                            path={`${match.url}/:selected`}
+                            path={`${match.url}/allview/:whatview`}
+                            component={Allview}
+                            key="allview"
+                        />
+                        <Route
+                            path={`${match.url}/selected/:selected`}
                             component={Selected}
-                            key=":selected"
+                            key="selected"
                         />
                     </Switch>
                 </RouteContainer>

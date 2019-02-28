@@ -14,3 +14,4 @@ export const Search = withSplitting(() => import('./Search'));
 
 // export const Selected = withSplitting(() => import('./Selected'));
 export { default as Selected } from './Selected';
+export { default as Allview } from './Allview';

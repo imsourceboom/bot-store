@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Swiper from 'react-id-swiper';
 import 'react-id-swiper/src/styles/css/swiper.css';
 import params from '../params';
@@ -18,7 +19,9 @@ const Container = ({ road }) => {
                     새롭게 추천하는
                     {road === '/game' ? ' 게임' : ' 봇'}
                 </h2>
-                <span>모두보기</span>
+                <Link to={`${road}/allview/suggest`}>
+                    <span>모두보기</span>
+                </Link>
             </HeadLine>
             <Swiper {...params}>
                 {gameSuggest.map((per, i) => {

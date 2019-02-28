@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Box = ({ road, per }) => (
     <Wrap className="swiper-slide">
         {per.map((each, i) => (
-            <Link to={`${road}/${each.pathname}`} key={i}>
+            <Link to={`${road}/selected/${each.pathname}`} key={i}>
                 <Item>
                     <img src={each.icon} alt="" />
                     <div>

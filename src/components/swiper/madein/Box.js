@@ -11,8 +11,8 @@ const Box = ({ road, per }) => (
                 <div>
                     <h4>{each.title}</h4>
                     <p>{each.summary}</p>
+                    <button type="button">열기</button>
                 </div>
-                <button type="button">열기</button>
             </Item>
             // </Link>
         ))}
@@ -50,35 +50,31 @@ const Wrap = styled.div`
 
 const Item = styled.div`
     display: flex;
-    align-items: center;
     margin-top: 1rem;
 
     & img {
         display: block;
         width: 100%;
         height: 100%;
-        max-width: 65px;
+        max-width: 90px;
         max-height: 100%;
         object-fit: contain;
         border-radius: 22.5%;
 
         @media (min-width: 768px) {
-            max-width: 70px;
+            max-width: 100px;
         }
     }
 
     & > div {
         flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         position: relative;
         padding-left: 1rem;
 
         h4 {
             display: inline-block;
             width: 100%;
-            max-width: 190px;
+            max-width: 231px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -89,7 +85,7 @@ const Item = styled.div`
             color: rgba(0, 0, 0, 0.4);
             display: inline-block;
             width: 100%;
-            max-width: 190px;
+            max-width: 231px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -102,16 +98,19 @@ const Item = styled.div`
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
         }
-    }
-    button {
-        width: 65px;
-        height: 25px;
-        line-height: 25px;
-        background-color: rgba(245, 245, 245, 1);
-        color: rgba(71, 144, 181, 1);
-        font-size: 0.8rem;
-        border-radius: 20px;
-        border: none;
+
+        button {
+            position: absolute;
+            bottom: 0;
+            width: 65px;
+            height: 25px;
+            line-height: 25px;
+            background-color: rgba(245, 245, 245, 1);
+            color: rgba(71, 144, 181, 1);
+            font-size: 0.8rem;
+            border-radius: 20px;
+            border: none;
+        }
     }
 `;
 

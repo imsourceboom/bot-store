@@ -7,45 +7,23 @@ import styled from 'styled-components';
 
 import Box from './Box';
 
-import { gameSuggest } from 'data';
+import { gamePopular } from 'data';
 
 const Container = ({ road }) => {
     return (
-        <SwiperWrap>
-            {/* <Border /> */}
-            <HeadLine>
-                <h3>관심있을 만한 다른 항목</h3>
-                <span>모두보기</span>
-            </HeadLine>
+        <Wrap>
             <Swiper {...params}>
-                {gameSuggest.map((per, i) => {
+                {gamePopular.map((per, i) => {
                     return <Box road={road} key={i} per={per} />;
                 })}
             </Swiper>
-        </SwiperWrap>
+        </Wrap>
     );
 };
 
-const SwiperWrap = styled.article`
+const Wrap = styled.article`
     @media (max-width: 767px) {
         margin: 0 -1rem;
-    }
-`;
-
-const HeadLine = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 5% 0;
-
-    @media (min-width: 768px) {
-        padding: 1rem 0 0;
-    }
-
-    span {
-        font-size: 0.8rem;
-        font-weight: 100;
-        color: rgba(76, 103, 161, 1);
     }
 `;
 

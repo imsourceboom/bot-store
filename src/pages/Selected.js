@@ -83,11 +83,38 @@ export default props => {
                     <h3>평가 및 리뷰</h3>
                     <Comment />
                 </Review>
+                <Information>
+                    <h3>정보</h3>
+                    <ul>
+                        <li>
+                            <div>제작자</div>
+                            <span>제작자 아이디</span>
+                        </li>
+                        <li>
+                            <div>카테고리</div>
+                            <span>게임: 아케이드</span>
+                        </li>
+                        <li>
+                            <div>언어</div>
+                            <span>한국어 및 영어</span>
+                        </li>
+                    </ul>
+                </Information>
             </Content>
             <Bottom>
                 <InsideWrap>
-                    <Relation />
+                    <HeadLine>
+                        <h3>제작가 만든 다른 봇</h3>
+                        <span>모두보기</span>
+                    </HeadLine>
                     <MadeIn />
+                </InsideWrap>
+                <InsideWrap>
+                    <HeadLine>
+                        <h3>관심있을 만한 다른 항목</h3>
+                        <span>모두보기</span>
+                    </HeadLine>
+                    <Relation />
                 </InsideWrap>
             </Bottom>
         </ContainerPose>
@@ -156,9 +183,12 @@ const View = styled.span``;
 const Description = styled.div``;
 
 const PreView = styled.div``;
+
 const Review = styled.div``;
 
-const Content = styled.div`
+const Information = styled.div``;
+
+const Content = styled.section`
     ${Layout}
     padding:0 1rem;
 
@@ -313,16 +343,41 @@ const Content = styled.div`
     ${Review} {
         padding-bottom: 2rem;
         margin-top: 1rem;
-        /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
         h3 {
             padding-bottom: 1rem;
         }
     }
+
+    ${Information} {
+        padding-bottom: 2rem;
+        margin-top: 1rem;
+        /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+
+        h3 {
+            padding-bottom: 1rem;
+        }
+
+        ul {
+            li {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+                padding: 0.5rem 0;
+                font-size: 14px;
+
+                div {
+                    color: rgba(189, 189, 189, 1);
+                }
+            }
+        }
+    }
 `;
 
+const HeadLine = styled.div``;
 const InsideWrap = styled.div``;
-const Bottom = styled.div`
+const Bottom = styled.section`
     padding-bottom: 60px;
     background-color: rgba(224, 242, 241, 1);
 
@@ -331,5 +386,27 @@ const Bottom = styled.div`
         max-width: 1024px;
         margin: 0 auto;
         padding: 0 1rem;
+
+        ${HeadLine} {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5% 0;
+
+            @media (max-width: 767px) {
+                margin: 0 -1rem;
+            }
+
+            @media (min-width: 768px) {
+                padding: 1rem 0 0;
+            }
+
+            span {
+                font-size: 0.8rem;
+                font-weight: 100;
+                color: rgba(76, 103, 161, 1);
+                cursor: pointer;
+            }
+        }
     }
 `;

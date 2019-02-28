@@ -5,7 +5,8 @@ import { Eye } from 'styled-icons/icomoon/Eye';
 import posed from 'react-pose';
 import Rating from 'react-rating';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { Intro, Comment } from 'components/swiper';
+
+import { Intro, Comment, Relation, MadeIn } from 'components/swiper';
 
 import { data } from 'data';
 
@@ -83,6 +84,12 @@ export default props => {
                     <Comment />
                 </Review>
             </Content>
+            <Bottom>
+                <InsideWrap>
+                    <Relation />
+                    <MadeIn />
+                </InsideWrap>
+            </Bottom>
         </ContainerPose>
     );
 };
@@ -153,7 +160,7 @@ const Review = styled.div``;
 
 const Content = styled.div`
     ${Layout}
-    padding:0 1rem 80px;
+    padding:0 1rem;
 
     ${Top} {
         display: flex;
@@ -294,7 +301,7 @@ const Content = styled.div`
     }
 
     ${PreView} {
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
         margin-top: 1rem;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
@@ -304,11 +311,25 @@ const Content = styled.div`
     }
 
     ${Review} {
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
         margin-top: 1rem;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+
         h3 {
             padding-bottom: 1rem;
         }
+    }
+`;
+
+const InsideWrap = styled.div``;
+const Bottom = styled.div`
+    padding-bottom: 60px;
+    background-color: rgba(224, 242, 241, 1);
+
+    ${InsideWrap} {
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 1rem;
     }
 `;

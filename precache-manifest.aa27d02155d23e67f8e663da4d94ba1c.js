@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/bot-store/static/media/fa-regular-400.f6c6f6c8.ttf"
   },
   {
-    "revision": "79960488a2af1029b43d",
-    "url": "/bot-store/static/js/main.79960488.chunk.js"
+    "revision": "22ea8b4fa29ec79af906",
+    "url": "/bot-store/static/js/main.22ea8b4f.chunk.js"
   },
   {
     "revision": "82905d8d1c06969df11c8c378e9bdd4c",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/bot-store/static/media/fa-brands-400.d9d17590.eot"
   },
   {
-    "revision": "15b3858e7ded57f11b97",
-    "url": "/bot-store/static/js/runtime~main.15b3858e.js"
+    "revision": "9b3df7606b691f09f30c",
+    "url": "/bot-store/static/js/runtime~main.9b3df760.js"
   },
   {
     "revision": "65779ebcc35604a25c2ba77309c5b8af",
@@ -68,35 +68,35 @@ self.__precacheManifest = [
     "url": "/bot-store/static/media/fa-solid-900.61969d43.woff"
   },
   {
-    "revision": "c2816d9713b7bc6caafd",
-    "url": "/bot-store/static/js/6.c2816d97.chunk.js"
+    "revision": "ffd8b914b5f207a8acd7",
+    "url": "/bot-store/static/js/6.ffd8b914.chunk.js"
   },
   {
-    "revision": "b2337ee77337f561a8ce",
-    "url": "/bot-store/static/js/5.b2337ee7.chunk.js"
+    "revision": "da32818a3a4e6971a890",
+    "url": "/bot-store/static/js/5.da32818a.chunk.js"
   },
   {
-    "revision": "0e25abf07d19fd731260",
-    "url": "/bot-store/static/js/4.0e25abf0.chunk.js"
+    "revision": "c2512acd4b482c26ffcf",
+    "url": "/bot-store/static/js/4.c2512acd.chunk.js"
   },
   {
-    "revision": "1dfab512503cfe89698f",
-    "url": "/bot-store/static/js/3.1dfab512.chunk.js"
+    "revision": "2303af9f4b945d95a5da",
+    "url": "/bot-store/static/js/3.2303af9f.chunk.js"
   },
   {
-    "revision": "58cc287017091d783b1c",
-    "url": "/bot-store/static/js/2.58cc2870.chunk.js"
+    "revision": "d06fd22b4ceb902924eb",
+    "url": "/bot-store/static/js/2.d06fd22b.chunk.js"
   },
   {
-    "revision": "b88e200318865a69674b",
-    "url": "/bot-store/static/js/1.b88e2003.chunk.js"
+    "revision": "be12c235393203bc938c",
+    "url": "/bot-store/static/js/1.be12c235.chunk.js"
   },
   {
-    "revision": "c2816d9713b7bc6caafd",
-    "url": "/bot-store/static/css/6.8ddcba2f.chunk.css"
+    "revision": "ffd8b914b5f207a8acd7",
+    "url": "/bot-store/static/css/6.26a32a16.chunk.css"
   },
   {
-    "revision": "e82cf87879404312b084963aeb587cac",
+    "revision": "c644ec327a5b6d34efe51ff9e1dc1ad9",
     "url": "/bot-store/index.html"
   }
 ];

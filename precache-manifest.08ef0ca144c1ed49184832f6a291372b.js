@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f6c6f6c8cb7784254ad00056f6fbd74e",
-    "url": "/bot-store/static/media/fa-regular-400.f6c6f6c8.ttf"
+    "revision": "414ff5daad323a1c47c5177d4bd29674",
+    "url": "/bot-store/static/media/fa-regular-400.414ff5da.eot"
   },
   {
-    "revision": "22ea8b4fa29ec79af906",
-    "url": "/bot-store/static/js/main.22ea8b4f.chunk.js"
+    "revision": "15c4f3e9a3c6caead11d",
+    "url": "/bot-store/static/js/main.15c4f3e9.chunk.js"
   },
   {
     "revision": "82905d8d1c06969df11c8c378e9bdd4c",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/bot-store/static/media/fa-regular-400.5dd3976c.woff"
   },
   {
-    "revision": "414ff5daad323a1c47c5177d4bd29674",
-    "url": "/bot-store/static/media/fa-regular-400.414ff5da.eot"
+    "revision": "f6c6f6c8cb7784254ad00056f6fbd74e",
+    "url": "/bot-store/static/media/fa-regular-400.f6c6f6c8.ttf"
   },
   {
     "revision": "c39278f7abfc798a241551194f55e29f",
@@ -96,7 +96,7 @@ self.__precacheManifest = [
     "url": "/bot-store/static/css/6.26a32a16.chunk.css"
   },
   {
-    "revision": "c644ec327a5b6d34efe51ff9e1dc1ad9",
+    "revision": "879b5b914f00046bd07f991ca413af9e",
     "url": "/bot-store/index.html"
   }
 ];

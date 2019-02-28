@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Box = ({ road, pathname, comment, title, summary, image }) => (
     <ItemWrap className="swiper-slide">
-        <Link to={`${road}/${pathname}`}>
+        <Link to={`${road}/selected/${pathname}`}>
             <h5>{comment}</h5>
             <h3>{title}</h3>
             <p>{summary}</p>

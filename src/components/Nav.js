@@ -47,7 +47,7 @@ const Nav = () => {
 };
 
 const link = {
-    color: 'rgba(217, 217, 220, 1)',
+    color: 'rgba(89, 89, 89, .4)',
     transition: '0.5s'
 };
 

@@ -35,7 +35,19 @@ export default props => {
             </Header>
             <Content>
                 <List>
-                    {data.map((per, i) => {
+                    {data
+                        .filter((v, i) => i < 20)
+                        .map((per, i) => (
+                            <li key={i}>
+                                <img src={per.icon} alt="" />
+                                <div>
+                                    <h4>{per.title}</h4>
+                                    <p>{per.summary}</p>
+                                    <button type="button">열기</button>
+                                </div>
+                            </li>
+                        ))}
+                    {/* {data.map((per, i) => {
                         if (i < 20) {
                             return (
                                 <li key={i}>
@@ -48,7 +60,7 @@ export default props => {
                                 </li>
                             );
                         }
-                    })}
+                    })} */}
                 </List>
             </Content>
         </ContainerPose>

@@ -11,6 +11,21 @@ const Search = () => (
             <SearchIcon size="22" />
             <input type="text" placeholder="Bot Store" />
         </Input>
+        <Result>
+            <Item />
+            <Item />
+            <Item />
+            <Item />
+            <Item />
+            <Item />
+            <Item />
+            <Item />
+            <Item />
+            <Item />
+            <Item />
+            <Item />
+            <Item />
+        </Result>
     </section>
 );
 
@@ -23,9 +38,15 @@ const SearchIcon = styled(SearchPlaceHolder)`
 `;
 
 const Input = styled.label`
-    position: relative;
+    position: sticky;
+    top: 0;
+    padding: 0.5rem 0;
     display: block;
-    height: 2.5rem;
+    background-color: rgba(255, 255, 255, 1);
+
+    @media (min-width: 768px) {
+        padding: 1rem 0;
+    }
 
     input {
         width: 100%;
@@ -47,6 +68,25 @@ const Input = styled.label`
 
         &::-moz-placeholder {
             color: rgba(191, 183, 183, 1);
+        }
+    }
+`;
+
+const Item = styled.li``;
+const Result = styled.ul`
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    ${Item} {
+        width: 100%;
+        height: 300px;
+        margin-top: 1rem;
+        border: 1px solid sandybrown;
+
+        @media (min-width: 768px) {
+            width: 49.25%;
         }
     }
 `;
